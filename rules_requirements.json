@@ -1,0 +1,27 @@
+[
+    {
+        "rule_id": 1,
+        "action": "failed_login",
+        "size": 500,
+        "operator": "greater_than",
+        "classification": 1
+    },
+    {
+        "rule_id": 2,
+        "action": "data_transfer",
+        "size": 4096,
+        "operator": "greater_than",
+        "classification": 1
+    },
+    {
+        "rule_id": 3,
+        "protocol": "UDP",
+        "classification": 1
+    },
+    {
+        "type": "MultipleRequests",
+        "rule_id": 3,
+        "num_of_times": 3,
+        "time_interval": 30
+    }
+]
